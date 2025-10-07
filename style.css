@@ -1,0 +1,260 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font styling */
+@font-face {
+  font-family: "Li Alinur Nakkhatra Unicode";
+  src: url("LiAlinurNakkhatraUnicode.woff2") format("woff2"),
+    url("LiAlinurNakkhatraUnicode.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* font styling italic */
+@font-face {
+  font-family: "Li Alinur Nakkhatra Unicode";
+  src: url("LiAlinurNakkhatraUnicode-Italic.woff2") format("woff2"),
+    url("LiAlinurNakkhatraUnicode-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* body styling */
+
+body {
+  font-family: "Li Alinur Nakkhatra Unicode";
+  font-size: 16px;
+  color: black;
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+header,
+main,
+.footer__body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid red; /*deletable*/
+}
+
+/* header left styling */
+.site__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+.logo img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.logo__info h1,
+.logo__info h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo__info h1 {
+  font-size: 20px;
+  font-family: 600;
+  color: #8e44ad;
+  transition: all 0.3 ease;
+}
+
+.logo__info h2 {
+  font-size: 14px;
+  font-family: 500;
+  color: #d35400;
+}
+
+/* header right styling */
+.navigation nav ul {
+  list-style-type: none;
+}
+
+.navigation nav ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.navigation nav ul li:last-child {
+  padding-right: 0;
+}
+
+.navigation nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #8e44ad;
+  transition: all 0.3s ease;
+}
+
+/* main styling start from here */
+
+main {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  column-gap: 10px;
+}
+
+/* main news left side styling here */
+
+.main__news__section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.news__snipptes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news__image img {
+  width: 100%;
+  transition: 0.2s all ease;
+}
+
+.new__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.new__description h3 {
+  color: #d35400;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+
+/* aside section styling here */
+
+.aside__links {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 16px 16px;
+  border: 1px solid #95a5a6;
+  border-radius: 10px;
+}
+
+.aside__links h3 {
+  font-size: 20px;
+  color: #8e44ad;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.aside__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.aside__body a {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* footer styling here */
+
+footer {
+  margin-top: 50px;
+  background-color: #130f40;
+}
+
+footer a,
+h2,
+h3,
+h4 {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 10px;
+  color: #d35400;
+}
+footer li {
+  list-style-type: none;
+  /* list-style-position: inside; */
+}
+
+.footer__body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /*editable*/
+  padding: 30px 0;
+  column-gap: 30px;
+}
+
+.about__us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__info {
+  margin-left: 20px;
+}
+
+.about__info h3 {
+  color: #d35400;
+  padding-bottom: 10px;
+}
+
+.about__info h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: #d35400;
+  padding: 20px 0;
+  border-top: 1px solid grey;
+}
+/* MAJOR STYLING IS FINISHED */
+
+/* all hover effects are styling here */
+.logo img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.logo__info h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navigation nav ul li a:hover {
+  color: #d35400;
+}
+
+.news__image img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.new__description h3:hover {
+  color: #8e44ad;
+}
+
+.aside__body a:hover {
+  color: #d35400;
+}
+
+footer a:hover {
+  color: grey;
+}

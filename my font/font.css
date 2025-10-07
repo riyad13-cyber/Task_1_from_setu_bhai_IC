@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Li Alinur Nakkhatra Unicode';
+    src: url('LiAlinurNakkhatraUnicode.woff2') format('woff2'),
+        url('LiAlinurNakkhatraUnicode.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Li Alinur Nakkhatra Unicode';
+    src: url('LiAlinurNakkhatraUnicode-Italic.woff2') format('woff2'),
+        url('LiAlinurNakkhatraUnicode-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
